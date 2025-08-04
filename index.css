@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080808;
+    color: #fff;
+}
+
+#head {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://i.postimg.cc/FFMvxM95/42573f025fffea0a35e9a71eb9c9f28b-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+
+.container1 {
+    padding: 20px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav .logo {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+nav .logo span {
+    color: red;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.headtext{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.headtext h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.headtext h1 span{
+    color: #ff004f;
+}
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about1{
+    flex-basis: 35%;
+}
+.about1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about2{
+    flex-basis:60%;
+}
+.title{
+    display: flex;
+    margin:30px 0 40px;
+}
+.tab{
+    margin-right: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab::after{  content: '';
+    width:0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.tab.active::after{
+    width: 50%;
+}
+.tabcontent ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+.tabcontent ul li span {
+    color: #c33260;
+    font-size: 20px;
+    font-weight: 2000;
+}
+
+
+#service{
+    padding: 30px 0;
+}
+.servicelist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px ,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.last{
+    display: flex;
+    justify-content: center;
+}
